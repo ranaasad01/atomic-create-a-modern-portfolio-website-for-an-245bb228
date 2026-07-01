@@ -1209,7 +1209,8 @@ export default function HomePage() {
                   data-atomic-id="a1o3y9mv"
                   data-atomic-instance={i}
                   style={i === 1 ? {
-                    fontSize: "32px"
+                    fontSize: "32px",
+                    color: "#f97316"
                   } : undefined}>
                   &ldquo;{t.quote}&rdquo;
                 </p>
