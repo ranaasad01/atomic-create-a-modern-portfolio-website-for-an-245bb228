@@ -506,7 +506,14 @@ export default function HomePage() {
                             data-atomic-id="ahjst7j"
                             data-atomic-instance={i} />
                         )}
-                        <span className={line.color} data-atomic-id="ad837o5" data-atomic-instance={i}>{line.cmd}</span>
+                        <span
+                          className={line.color}
+                          data-atomic-id="ad837o5"
+                          data-atomic-instance={i}
+                          style={i === 3 ? {
+                            color: "#a855f7",
+                            backgroundColor: "#f59e0b"
+                          } : undefined}>{line.cmd}</span>
                       </div>
                     ))}
                     <div className="flex gap-2 items-center" data-atomic-id="a2vrzme">
