@@ -531,7 +531,7 @@ export default function HomePage() {
                 Research instincts,{" "}
                 <span className="text-white/50">production discipline.</span>
               </motion.h2>
-              <motion.p variants={fadeInUp} className="text-white/55 leading-relaxed text-pretty">
+              <motion.p variants={fadeInUp} className="text-white/55 leading-relaxed text-pretty" style={{ color: "#22c55e" }}>
                 I&apos;m an AI/ML engineer with 5+ years building systems at the frontier of language
                 models and large-scale machine learning. My work spans RLHF infrastructure at
                 Anthropic, active learning pipelines at Scale AI, and NLP robustness research at
