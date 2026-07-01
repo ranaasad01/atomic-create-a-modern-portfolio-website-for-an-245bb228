@@ -1229,7 +1229,9 @@ export default function HomePage() {
                       className="text-xs text-white/40"
                       data-atomic-id="adh0kfa"
                       data-atomic-instance={i}
-                      style={i === 0 ? {
+                      style={i === 1 ? {
+                        color: "#06b6d4"
+                      } : i === 0 ? {
                         color: "#6366f1"
                       } : undefined}>{t.title}</div>
                   </div>
