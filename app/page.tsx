@@ -1224,7 +1224,7 @@ export default function HomePage() {
                     <div
                       className="text-sm font-semibold text-white"
                       data-atomic-id="adflqas"
-                      data-atomic-instance={i}>{t.name}</div>
+                      data-atomic-instance={i}>{i === 1 ? "Demas Hisabus" : t.name}</div>
                     <div
                       className="text-xs text-white/40"
                       data-atomic-id="adh0kfa"
