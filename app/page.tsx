@@ -1,5 +1,4 @@
 "use client";
-
 import { useRef, useState } from "react";
 import Link from "next/link";
 import { motion, useReducedMotion, type Variants } from "framer-motion";
@@ -299,16 +298,22 @@ export default function HomePage() {
     : { initial: "hidden", whileInView: "visible", viewport: { once: true, margin: "-80px" } };
 
   return (
-    <main className="bg-[#0a0a0f] text-white overflow-x-hidden">
+    <main
+      className="bg-[#0a0a0f] text-white overflow-x-hidden"
+      data-atomic-id="ab01ars">
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <section
         id="home"
         className="relative min-h-screen flex items-center pt-16 pb-24 overflow-hidden"
-      >
+        data-atomic-id="a1cu1h8d">
         {/* Background mesh */}
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] rounded-full bg-violet-600/10 blur-[120px]" />
-          <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] rounded-full bg-cyan-500/8 blur-[100px]" />
+        <div className="absolute inset-0 pointer-events-none" data-atomic-id="ay4zfm8">
+          <div
+            className="absolute top-1/4 left-1/4 w-[600px] h-[600px] rounded-full bg-violet-600/10 blur-[120px]"
+            data-atomic-id="aivdp8z" />
+          <div
+            className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] rounded-full bg-cyan-500/8 blur-[100px]"
+            data-atomic-id="aiwsjdh" />
           {/* Grid overlay */}
           <div
             className="absolute inset-0 opacity-[0.03]"
@@ -317,11 +322,15 @@ export default function HomePage() {
                 "linear-gradient(rgba(255,255,255,0.8) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.8) 1px, transparent 1px)",
               backgroundSize: "64px 64px",
             }}
-          />
+            data-atomic-id="aizm7mh" />
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-8 w-full">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div
+          className="relative max-w-7xl mx-auto px-6 lg:px-8 w-full"
+          data-atomic-id="ay6e9qq">
+          <div
+            className="grid lg:grid-cols-2 gap-16 items-center"
+            data-atomic-id="apn99lh">
             {/* Left: copy */}
             <motion.div
               variants={staggerContainer}
@@ -331,22 +340,33 @@ export default function HomePage() {
             >
               {/* Status badge */}
               <motion.div variants={fadeInUp}>
-                <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-medium">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                <span
+                  className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-medium"
+                  data-atomic-id="a13ccwgh">
+                  <span
+                    className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"
+                    data-atomic-id="a1ldiks4" />
                   Open to senior ML roles
                 </span>
               </motion.div>
 
               {/* Headline */}
               <motion.div variants={fadeInUp} className="space-y-3">
-                <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-[1.05] font-[family-name:var(--font-space-grotesk)]">
-                  <span className="text-white">AI/ML</span>
-                  <br />
-                  <span className="bg-gradient-to-r from-violet-400 via-violet-300 to-cyan-400 bg-clip-text text-transparent">
+                <h1
+                  className="text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-[1.05] font-[family-name:var(--font-space-grotesk)]"
+                  data-atomic-id="a1mchto">
+                  <span className="text-white" data-atomic-id="a1o9rtq0">AI/ML</span>
+                  <br data-atomic-id="aoubnvg" />
+                  <span
+                    className="bg-gradient-to-r from-violet-400 via-violet-300 to-cyan-400 bg-clip-text text-transparent"
+                    data-atomic-id="a1quz1z0">
                     Engineer
                   </span>
-                  <br />
-                  <span className="text-white/80 text-4xl lg:text-5xl xl:text-6xl" style={{ color: "#ef4444" }}>
+                  <br data-atomic-id="aoueqsg" />
+                  <span
+                    className="text-white/80 text-4xl lg:text-5xl xl:text-6xl"
+                    style={{ color: "#ef4444" }}
+                    data-atomic-id="a1tg6a80">
                     &amp; Researcher
                   </span>
                 </h1>
@@ -370,14 +390,22 @@ export default function HomePage() {
                   { value: "5+", label: "Years in ML" },
                   { value: "3", label: "NeurIPS / ACL papers" },
                   { value: "40M+", label: "Daily queries served" },
-                ].map((stat) => (
-                  <div key={stat.label} className="space-y-0.5">
-                    <div className="text-2xl font-bold text-white font-[family-name:var(--font-space-grotesk)]">
-                      {stat.value}
-                    </div>
-                    <div className="text-xs text-white/40">{stat.label}</div>
+                ].map((stat, __atomicIdx) => (<div
+                  key={stat.label}
+                  className="space-y-0.5"
+                  data-atomic-id="a1xp51hc"
+                  data-atomic-instance={__atomicIdx}>
+                  <div
+                    className="text-2xl font-bold text-white font-[family-name:var(--font-space-grotesk)]"
+                    data-atomic-id="a1hzwmbn"
+                    data-atomic-instance={__atomicIdx}>
+                    {stat.value}
                   </div>
-                ))}
+                  <div
+                    className="text-xs text-white/40"
+                    data-atomic-id="a1i1bgg5"
+                    data-atomic-instance={__atomicIdx}>{stat.label}</div>
+                </div>))}
               </motion.div>
 
               {/* CTAs */}
@@ -389,7 +417,7 @@ export default function HomePage() {
                     document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" });
                   }}
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-violet-600 to-violet-500 text-white font-semibold text-sm hover:from-violet-500 hover:to-violet-400 transition-all duration-300 shadow-[0_0_24px_rgba(124,58,237,0.4)] hover:shadow-[0_0_32px_rgba(124,58,237,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-500"
-                >
+                  data-atomic-id="au72pav">
                   View Projects
                   <ArrowRight size={16} />
                 </a>
@@ -397,7 +425,7 @@ export default function HomePage() {
                   href={BRAND.resumeUrl}
                   download
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-white/10 bg-white/[0.04] text-white/80 font-semibold text-sm hover:bg-white/[0.08] hover:text-white hover:border-white/20 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-500"
-                >
+                  data-atomic-id="au72qzd">
                   <Download size={16} />
                   Resume
                 </a>
@@ -405,18 +433,17 @@ export default function HomePage() {
 
               {/* Social links */}
               <motion.div variants={fadeInUp} className="flex items-center gap-3 pt-1">
-                {socialLinks.map((s) => (
-                  <a
-                    key={s.label}
-                    href={s.href}
-                    target={s.href.startsWith("mailto") ? undefined : "_blank"}
-                    rel="noopener noreferrer"
-                    aria-label={s.label}
-                    className="w-9 h-9 rounded-lg border border-white/10 bg-white/[0.04] flex items-center justify-center text-white/50 hover:text-white hover:border-white/20 hover:bg-white/[0.08] transition-all duration-200"
-                  >
-                    {iconMap[s.icon] ?? <Mail size={18} />}
-                  </a>
-                ))}
+                {socialLinks.map((s, __atomicIdx) => (<a
+                  key={s.label}
+                  href={s.href}
+                  target={s.href.startsWith("mailto") ? undefined : "_blank"}
+                  rel="noopener noreferrer"
+                  aria-label={s.label}
+                  className="w-9 h-9 rounded-lg border border-white/10 bg-white/[0.04] flex items-center justify-center text-white/50 hover:text-white hover:border-white/20 hover:bg-white/[0.08] transition-all duration-200"
+                  data-atomic-id="a1u6gltp"
+                  data-atomic-instance={__atomicIdx}>
+                  {iconMap[s.icon] ?? <Mail size={18} />}
+                </a>))}
               </motion.div>
             </motion.div>
 
@@ -427,19 +454,27 @@ export default function HomePage() {
               animate="visible"
               className="hidden lg:block"
             >
-              <div className="relative">
+              <div className="relative" data-atomic-id="aqffpfl">
                 {/* Glow behind card */}
-                <div className="absolute -inset-4 rounded-3xl bg-gradient-to-br from-violet-600/20 to-cyan-500/10 blur-2xl" />
-                <div className="relative rounded-2xl border border-white/[0.08] bg-[#111118] shadow-[0_8px_64px_rgba(0,0,0,0.6)] overflow-hidden">
+                <div
+                  className="absolute -inset-4 rounded-3xl bg-gradient-to-br from-violet-600/20 to-cyan-500/10 blur-2xl"
+                  data-atomic-id="a1it9xra" />
+                <div
+                  className="relative rounded-2xl border border-white/[0.08] bg-[#111118] shadow-[0_8px_64px_rgba(0,0,0,0.6)] overflow-hidden"
+                  data-atomic-id="a1iuorvs">
                   {/* Terminal header */}
-                  <div className="flex items-center gap-2 px-4 py-3 border-b border-white/[0.06] bg-white/[0.02]">
-                    <span className="w-3 h-3 rounded-full bg-red-500/70" />
-                    <span className="w-3 h-3 rounded-full bg-amber-500/70" />
-                    <span className="w-3 h-3 rounded-full bg-emerald-500/70" />
-                    <span className="ml-3 text-xs text-white/30 font-mono">aiden@ml-workstation</span>
+                  <div
+                    className="flex items-center gap-2 px-4 py-3 border-b border-white/[0.06] bg-white/[0.02]"
+                    data-atomic-id="a1k8tb3h">
+                    <span className="w-3 h-3 rounded-full bg-red-500/70" data-atomic-id="a1w2pq7" />
+                    <span className="w-3 h-3 rounded-full bg-amber-500/70" data-atomic-id="a36obup" />
+                    <span
+                      className="w-3 h-3 rounded-full bg-emerald-500/70"
+                      data-atomic-id="a4h9xz7" />
+                    <span className="ml-3 text-xs text-white/30 font-mono" data-atomic-id="a5rvk3p">aiden@ml-workstation</span>
                   </div>
                   {/* Terminal body */}
-                  <div className="p-6 font-mono text-sm space-y-3">
+                  <div className="p-6 font-mono text-sm space-y-3" data-atomic-id="a1kbmzch">
                     {[
                       { prompt: "~", cmd: "python train.py --model llama-70b", color: "text-violet-400" },
                       { prompt: null, cmd: "Loading checkpoint... ✓", color: "text-white/40" },
@@ -451,19 +486,31 @@ export default function HomePage() {
                       { prompt: "~", cmd: "deploy --target prod --replicas 8", color: "text-violet-400" },
                       { prompt: null, cmd: "Deployment successful. Serving traffic.", color: "text-emerald-400" },
                     ].map((line, i) => (
-                      <div key={i} className="flex gap-2">
+                      <div
+                        key={i}
+                        className="flex gap-2"
+                        data-atomic-id="a1pv8drz"
+                        data-atomic-instance={i}>
                         {line.prompt && (
-                          <span className="text-violet-500 select-none">$</span>
+                          <span
+                            className="text-violet-500 select-none"
+                            data-atomic-id="a1cicp5p"
+                            data-atomic-instance={i}>$</span>
                         )}
                         {!line.prompt && (
-                          <span className="text-white/20 select-none w-3 shrink-0" />
+                          <span
+                            className="text-white/20 select-none w-3 shrink-0"
+                            data-atomic-id="ahjst7j"
+                            data-atomic-instance={i} />
                         )}
-                        <span className={line.color}>{line.cmd}</span>
+                        <span className={line.color} data-atomic-id="ad837o5" data-atomic-instance={i}>{line.cmd}</span>
                       </div>
                     ))}
-                    <div className="flex gap-2 items-center">
-                      <span className="text-violet-500 select-none">$</span>
-                      <span className="w-2 h-4 bg-violet-400 animate-pulse rounded-sm" />
+                    <div className="flex gap-2 items-center" data-atomic-id="a2vrzme">
+                      <span className="text-violet-500 select-none" data-atomic-id="a1vaxa08">$</span>
+                      <span
+                        className="w-2 h-4 bg-violet-400 animate-pulse rounded-sm"
+                        data-atomic-id="a1wliw4q" />
                     </div>
                   </div>
                 </div>
@@ -479,36 +526,51 @@ export default function HomePage() {
           transition={{ delay: 1.5, duration: 0.6 }}
           className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5"
         >
-          <span className="text-xs text-white/25 tracking-widest uppercase">Scroll</span>
-          <div className="w-px h-8 bg-gradient-to-b from-white/20 to-transparent" />
+          <span
+            className="text-xs text-white/25 tracking-widest uppercase"
+            data-atomic-id="aevntew">Scroll</span>
+          <div
+            className="w-px h-8 bg-gradient-to-b from-white/20 to-transparent"
+            data-atomic-id="a138f8ez" />
         </motion.div>
       </section>
-
       {/* ── ABOUT ────────────────────────────────────────────────────────── */}
-      <section id="about" className="relative py-28 md:py-36">
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent" />
+      <section id="about" className="relative py-28 md:py-36" data-atomic-id="a10205tt">
+        <div
+          className="absolute inset-0 pointer-events-none"
+          data-atomic-id="a1bnbq6q">
+          <div
+            className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent"
+            data-atomic-id="axpjn85" />
         </div>
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-[1fr_1.2fr] gap-16 items-center">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8" data-atomic-id="a1boqkb8">
+          <div
+            className="grid lg:grid-cols-[1fr_1.2fr] gap-16 items-center"
+            data-atomic-id="a14hf7kn">
             {/* Image side */}
             <motion.div
               variants={fadeInLeft}
               {...motionProps}
               className="relative"
             >
-              <div className="relative aspect-[4/5] max-w-sm mx-auto lg:mx-0">
-                <div className="absolute -inset-3 rounded-3xl bg-gradient-to-br from-violet-600/20 to-cyan-500/10 blur-xl" />
+              <div
+                className="relative aspect-[4/5] max-w-sm mx-auto lg:mx-0"
+                data-atomic-id="a1x0tt4v">
+                <div
+                  className="absolute -inset-3 rounded-3xl bg-gradient-to-br from-violet-600/20 to-cyan-500/10 blur-xl"
+                  data-atomic-id="awishwi" />
                 <img
                   src="https://media.licdn.com/dms/image/v2/D5603AQGuIaBBElYOaQ/profile-displayphoto-scale_200_200/B56ZplhXxZG0AY-/0/1762639841192?e=2147483647&v=beta&t=Qf4pjdYs-IyHr__zN0HRtLqb0_vycPOnpqV2kXBfnTY"
                   alt="Aiden Park, AI/ML Engineer"
                   className="relative w-full h-full object-cover rounded-2xl border border-white/[0.08] shadow-[0_8px_48px_rgba(0,0,0,0.5)]"
-                />
+                  data-atomic-id="awk7gbi" />
                 {/* Floating badge */}
-                <div className="absolute -bottom-4 -right-4 bg-[#111118] border border-white/[0.08] rounded-xl px-4 py-3 shadow-[0_4px_24px_rgba(0,0,0,0.4)]">
-                  <div className="text-xs text-white/40 mb-0.5">Current role</div>
-                  <div className="text-sm font-semibold text-white">Anthropic</div>
-                  <div className="text-xs text-violet-400">Senior ML Engineer</div>
+                <div
+                  className="absolute -bottom-4 -right-4 bg-[#111118] border border-white/[0.08] rounded-xl px-4 py-3 shadow-[0_4px_24px_rgba(0,0,0,0.4)]"
+                  data-atomic-id="awn10a0">
+                  <div className="text-xs text-white/40 mb-0.5" data-atomic-id="a94spuz">Current role</div>
+                  <div className="text-sm font-semibold text-white" data-atomic-id="a967jzh">Anthropic</div>
+                  <div className="text-xs text-violet-400" data-atomic-id="a97me3z">Senior ML Engineer</div>
                 </div>
               </div>
             </motion.div>
@@ -520,7 +582,9 @@ export default function HomePage() {
               className="space-y-6"
             >
               <motion.div variants={fadeInUp}>
-                <span className="text-xs font-semibold uppercase tracking-widest text-violet-400">
+                <span
+                  className="text-xs font-semibold uppercase tracking-widest text-violet-400"
+                  data-atomic-id="aao0jh1">
                   About me
                 </span>
               </motion.div>
@@ -529,7 +593,7 @@ export default function HomePage() {
                 className="text-4xl lg:text-5xl font-bold tracking-tight font-[family-name:var(--font-space-grotesk)] text-balance"
               >
                 Research instincts,{" "}
-                <span className="text-white/50">production discipline.</span>
+                <span className="text-white/50" data-atomic-id="amf7n4p">production discipline.</span>
               </motion.h2>
               <motion.p variants={fadeInUp} className="text-white/55 leading-relaxed text-pretty" style={{ color: "#22c55e" }}>
                 I&apos;m an AI/ML engineer with 5+ years building systems at the frontier of language
@@ -549,15 +613,20 @@ export default function HomePage() {
                   { label: "Specialization", value: "LLMs & RLHF" },
                   { label: "Location", value: BRAND.location },
                   { label: "Status", value: "Open to work" },
-                ].map((item) => (
+                ].map((item, __atomicIdx) => (<div
+                  key={item.label}
+                  className="rounded-xl border border-white/[0.06] bg-white/[0.02] px-4 py-3"
+                  data-atomic-id="a99nryx"
+                  data-atomic-instance={__atomicIdx}>
                   <div
-                    key={item.label}
-                    className="rounded-xl border border-white/[0.06] bg-white/[0.02] px-4 py-3"
-                  >
-                    <div className="text-xs text-white/35 mb-1">{item.label}</div>
-                    <div className="text-sm font-medium text-white/80">{item.value}</div>
-                  </div>
-                ))}
+                    className="text-xs text-white/35 mb-1"
+                    data-atomic-id="a1m7u8e4"
+                    data-atomic-instance={__atomicIdx}>{item.label}</div>
+                  <div
+                    className="text-sm font-medium text-white/80"
+                    data-atomic-id="a1m992im"
+                    data-atomic-instance={__atomicIdx}>{item.value}</div>
+                </div>))}
               </motion.div>
               <motion.div variants={fadeInUp} className="pt-2">
                 <a
@@ -567,7 +636,7 @@ export default function HomePage() {
                     document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
                   }}
                   className="inline-flex items-center gap-2 text-sm font-semibold text-violet-400 hover:text-violet-300 transition-colors group"
-                >
+                  data-atomic-id="a4s5kr9">
                   Get in touch
                   <ChevronRight size={16} className="group-hover:translate-x-1 transition-transform" />
                 </a>
@@ -576,14 +645,22 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* ── SKILLS ───────────────────────────────────────────────────────── */}
-      <section id="skills" className="relative py-28 md:py-36 bg-white/[0.015]">
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent" />
-          <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent" />
+      <section
+        id="skills"
+        className="relative py-28 md:py-36 bg-white/[0.015]"
+        data-atomic-id="atsvg24">
+        <div
+          className="absolute inset-0 pointer-events-none"
+          data-atomic-id="a1p4dldp">
+          <div
+            className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent"
+            data-atomic-id="a1aca65c" />
+          <div
+            className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent"
+            data-atomic-id="a1adp09u" />
         </div>
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8" data-atomic-id="a1p5sfi7">
           <motion.div
             variants={staggerContainer}
             {...motionProps}
@@ -609,47 +686,60 @@ export default function HomePage() {
             {...motionProps}
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5"
           >
-            {skills.map((skill) => (
-              <motion.div
-                key={skill.category}
-                variants={scaleIn}
-                whileHover={{ y: -4, transition: { duration: 0.2 } }}
-                className="group rounded-2xl border border-white/[0.06] bg-[#111118] p-6 hover:border-white/[0.12] transition-all duration-300 shadow-[0_2px_16px_rgba(0,0,0,0.3)]"
-              >
-                <div className="flex items-center gap-3 mb-5">
-                  <div
-                    className={`w-9 h-9 rounded-lg bg-gradient-to-br ${skill.color} flex items-center justify-center text-white`}
-                    style={{ boxShadow: `0 0 16px ${skill.glow}` }}
-                  >
-                    {skill.icon}
-                  </div>
-                  <h3 className="font-semibold text-white/90 font-[family-name:var(--font-space-grotesk)]">
-                    {skill.category}
-                  </h3>
+            {skills.map((skill, __atomicIdx) => (<motion.div
+              key={skill.category}
+              variants={scaleIn}
+              whileHover={{ y: -4, transition: { duration: 0.2 } }}
+              className="group rounded-2xl border border-white/[0.06] bg-[#111118] p-6 hover:border-white/[0.12] transition-all duration-300 shadow-[0_2px_16px_rgba(0,0,0,0.3)]"
+            >
+              <div
+                className="flex items-center gap-3 mb-5"
+                data-atomic-id="a1jp3t5h"
+                data-atomic-instance={__atomicIdx}>
+                <div
+                  className={`w-9 h-9 rounded-lg bg-gradient-to-br ${skill.color} flex items-center justify-center text-white`}
+                  style={{ boxShadow: `0 0 16px ${skill.glow}` }}
+                  data-atomic-id="ao2q8oo"
+                  data-atomic-instance={__atomicIdx}>
+                  {skill.icon}
                 </div>
-                <div className="flex flex-wrap gap-2">
-                  {skill.items.map((item) => (
-                    <span
-                      key={item}
-                      className="px-2.5 py-1 rounded-lg bg-white/[0.04] border border-white/[0.06] text-xs text-white/60 group-hover:text-white/70 transition-colors"
-                    >
-                      {item}
-                    </span>
-                  ))}
-                </div>
-              </motion.div>
-            ))}
+                <h3
+                  className="font-semibold text-white/90 font-[family-name:var(--font-space-grotesk)]"
+                  data-atomic-id="aspnkk2"
+                  data-atomic-instance={__atomicIdx}>
+                  {skill.category}
+                </h3>
+              </div>
+              <div
+                className="flex flex-wrap gap-2"
+                data-atomic-id="a1jqin9z"
+                data-atomic-instance={__atomicIdx}>
+                {skill.items.map((item, __atomicIdx) => (<span
+                  key={item}
+                  className="px-2.5 py-1 rounded-lg bg-white/[0.04] border border-white/[0.06] text-xs text-white/60 group-hover:text-white/70 transition-colors"
+                  data-atomic-id="am5lhv8"
+                  data-atomic-instance={__atomicIdx}>
+                  {item}
+                </span>))}
+              </div>
+            </motion.div>))}
           </motion.div>
         </div>
       </section>
-
       {/* ── PROJECTS ─────────────────────────────────────────────────────── */}
-      <section id="projects" className="relative py-28 md:py-36">
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent" />
-          <div className="absolute top-1/2 right-0 w-[500px] h-[500px] rounded-full bg-violet-600/5 blur-[100px]" />
+      <section
+        id="projects"
+        className="relative py-28 md:py-36"
+        data-atomic-id="ah0u4nk">
+        <div className="absolute inset-0 pointer-events-none" data-atomic-id="a3n0o3l">
+          <div
+            className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent"
+            data-atomic-id="a1vyboh0" />
+          <div
+            className="absolute top-1/2 right-0 w-[500px] h-[500px] rounded-full bg-violet-600/5 blur-[100px]"
+            data-atomic-id="a1vzqili" />
         </div>
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8" data-atomic-id="a3ofi83">
           <motion.div
             variants={staggerContainer}
             {...motionProps}
@@ -671,7 +761,7 @@ export default function HomePage() {
           </motion.div>
 
           {/* Featured projects — large cards */}
-          <div className="space-y-8 mb-8">
+          <div className="space-y-8 mb-8" data-atomic-id="a3rwv3e">
             {projects
               .filter((p) => p.featured)
               .map((project, i) => {
@@ -684,68 +774,112 @@ export default function HomePage() {
                     whileHover={{ y: -2, transition: { duration: 0.2 } }}
                     className={`group rounded-2xl border ${ac.border} bg-[#111118] overflow-hidden shadow-[0_4px_32px_rgba(0,0,0,0.4)] hover:shadow-[0_8px_48px_rgba(0,0,0,0.5)] transition-all duration-300`}
                   >
-                    <div className={`grid lg:grid-cols-[1.4fr_1fr] ${i % 2 === 1 ? "lg:grid-cols-[1fr_1.4fr]" : ""}`}>
+                    <div
+                      className={`grid lg:grid-cols-[1.4fr_1fr] ${i % 2 === 1 ? "lg:grid-cols-[1fr_1.4fr]" : ""}`}
+                      data-atomic-id="a1aoy5qt"
+                      data-atomic-instance={i}>
                       {/* Content */}
-                      <div className={`p-8 lg:p-10 space-y-5 ${i % 2 === 1 ? "lg:order-2" : ""}`}>
-                        <div className="flex items-start justify-between gap-4">
-                          <div>
-                            <div className={`text-xs font-semibold uppercase tracking-widest ${ac.text} mb-2`}>
+                      <div
+                        className={`p-8 lg:p-10 space-y-5 ${i % 2 === 1 ? "lg:order-2" : ""}`}
+                        data-atomic-id="axplp6i"
+                        data-atomic-instance={i}>
+                        <div
+                          className="flex items-start justify-between gap-4"
+                          data-atomic-id="al4c71"
+                          data-atomic-instance={i}>
+                          <div data-atomic-id="a1uz0teo" data-atomic-instance={i}>
+                            <div
+                              className={`text-xs font-semibold uppercase tracking-widest ${ac.text} mb-2`}
+                              data-atomic-id="a1wfm337"
+                              data-atomic-instance={i}>
                               {project.subtitle}
                             </div>
-                            <h3 className="text-2xl font-bold text-white font-[family-name:var(--font-space-grotesk)]">
+                            <h3
+                              className="text-2xl font-bold text-white font-[family-name:var(--font-space-grotesk)]"
+                              data-atomic-id="aezml25"
+                              data-atomic-instance={i}>
                               {project.title}
                             </h3>
                           </div>
-                          <div className="flex gap-2 shrink-0">
+                          <div
+                            className="flex gap-2 shrink-0"
+                            data-atomic-id="a1v0fnj6"
+                            data-atomic-instance={i}>
                             <a
                               href={project.github}
                               target="_blank"
                               rel="noopener noreferrer"
                               aria-label="GitHub"
                               className="w-8 h-8 rounded-lg border border-white/10 bg-white/[0.04] flex items-center justify-center text-white/50 hover:text-white hover:border-white/20 transition-all"
-                            >
+                              data-atomic-id="a15xzgpv"
+                              data-atomic-instance={i}>
                               <Github size={15} />
                             </a>
                             <a
                               href={project.demo}
                               aria-label="Demo"
                               className="w-8 h-8 rounded-lg border border-white/10 bg-white/[0.04] flex items-center justify-center text-white/50 hover:text-white hover:border-white/20 transition-all"
-                            >
+                              data-atomic-id="a15xzied"
+                              data-atomic-instance={i}>
                               <ExternalLink size={15} />
                             </a>
                           </div>
                         </div>
-                        <p className="text-white/55 leading-relaxed text-sm text-pretty">
+                        <p
+                          className="text-white/55 leading-relaxed text-sm text-pretty"
+                          data-atomic-id="ai75cr0"
+                          data-atomic-instance={i}>
                           {project.description}
                         </p>
-                        <div className="flex flex-wrap gap-2">
-                          {project.tags.map((tag) => (
-                            <span key={tag} className={`px-2.5 py-1 rounded-lg text-xs font-medium ${ac.badge}`}>
-                              {tag}
-                            </span>
-                          ))}
+                        <div
+                          className="flex flex-wrap gap-2"
+                          data-atomic-id="any0g1"
+                          data-atomic-instance={i}>
+                          {project.tags.map((tag, __atomicIdx) => (<span
+                            key={tag}
+                            className={`px-2.5 py-1 rounded-lg text-xs font-medium ${ac.badge}`}
+                            data-atomic-id="a1eh280u"
+                            data-atomic-instance={__atomicIdx}>
+                            {tag}
+                          </span>))}
                         </div>
-                        <div className="grid grid-cols-3 gap-4 pt-2">
-                          {project.metrics.map((m) => (
-                            <div key={m.label} className={`rounded-xl ${ac.bg} border ${ac.border} px-3 py-2.5 text-center`}>
-                              <div className={`text-lg font-bold ${ac.text} font-[family-name:var(--font-space-grotesk)]`}>
-                                {m.value}
-                              </div>
-                              <div className="text-[10px] text-white/40 mt-0.5">{m.label}</div>
+                        <div
+                          className="grid grid-cols-3 gap-4 pt-2"
+                          data-atomic-id="apcukj"
+                          data-atomic-instance={i}>
+                          {project.metrics.map((m, __atomicIdx) => (<div
+                            key={m.label}
+                            className={`rounded-xl ${ac.bg} border ${ac.border} px-3 py-2.5 text-center`}
+                            data-atomic-id="aylfykx"
+                            data-atomic-instance={__atomicIdx}>
+                            <div
+                              className={`text-lg font-bold ${ac.text} font-[family-name:var(--font-space-grotesk)]`}
+                              data-atomic-id="a13mj6gk"
+                              data-atomic-instance={__atomicIdx}>
+                              {m.value}
                             </div>
-                          ))}
+                            <div
+                              className="text-[10px] text-white/40 mt-0.5"
+                              data-atomic-id="a13ny0l2"
+                              data-atomic-instance={__atomicIdx}>{m.label}</div>
+                          </div>))}
                         </div>
                       </div>
                       {/* Image */}
-                      <div className={`relative min-h-[220px] lg:min-h-0 ${i % 2 === 1 ? "lg:order-1" : ""}`}>
+                      <div
+                        className={`relative min-h-[220px] lg:min-h-0 ${i % 2 === 1 ? "lg:order-1" : ""}`}
+                        data-atomic-id="axsfdfi"
+                        data-atomic-instance={i}>
                         <img
                           src={project.image}
                           alt={project.title}
                           className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-75 transition-opacity duration-500"
-                        />
+                          data-atomic-id="ae4vl6j"
+                          data-atomic-instance={i} />
                         <div
                           className={`absolute inset-0 ${i % 2 === 0 ? "bg-gradient-to-r" : "bg-gradient-to-l"} from-[#111118] via-[#111118]/20 to-transparent`}
-                        />
+                          data-atomic-id="ae6ab0j"
+                          data-atomic-instance={i} />
                       </div>
                     </div>
                   </motion.div>
@@ -761,7 +895,7 @@ export default function HomePage() {
           >
             {projects
               .filter((p) => !p.featured)
-              .map((project) => {
+              .map((project, __atomicIdx) => {
                 const ac = accentClasses[project.accent] ?? accentClasses.violet;
                 return (
                   <motion.div
@@ -770,53 +904,86 @@ export default function HomePage() {
                     whileHover={{ y: -4, transition: { duration: 0.2 } }}
                     className={`group rounded-2xl border ${ac.border} bg-[#111118] p-7 space-y-4 shadow-[0_2px_16px_rgba(0,0,0,0.3)] hover:shadow-[0_4px_32px_rgba(0,0,0,0.4)] transition-all duration-300`}
                   >
-                    <div className="flex items-start justify-between gap-3">
-                      <div>
-                        <div className={`text-xs font-semibold uppercase tracking-widest ${ac.text} mb-1.5`}>
+                    <div
+                      className="flex items-start justify-between gap-3"
+                      data-atomic-id="a1tk58yh"
+                      data-atomic-instance={__atomicIdx}>
+                      <div data-atomic-id="a1dv2nng" data-atomic-instance={__atomicIdx}>
+                        <div
+                          className={`text-xs font-semibold uppercase tracking-widest ${ac.text} mb-1.5`}
+                          data-atomic-id="a1bbqdj3"
+                          data-atomic-instance={__atomicIdx}>
                           {project.subtitle}
                         </div>
-                        <h3 className="text-xl font-bold text-white font-[family-name:var(--font-space-grotesk)]">
+                        <h3
+                          className="text-xl font-bold text-white font-[family-name:var(--font-space-grotesk)]"
+                          data-atomic-id="agi3795"
+                          data-atomic-instance={__atomicIdx}>
                           {project.title}
                         </h3>
                       </div>
-                      <div className="flex gap-2 shrink-0">
+                      <div
+                        className="flex gap-2 shrink-0"
+                        data-atomic-id="a1dwhhry"
+                        data-atomic-instance={__atomicIdx}>
                         <a
                           href={project.github}
                           target="_blank"
                           rel="noopener noreferrer"
                           aria-label="GitHub"
                           className="w-8 h-8 rounded-lg border border-white/10 bg-white/[0.04] flex items-center justify-center text-white/50 hover:text-white transition-all"
-                        >
+                          data-atomic-id="a1iwkcan"
+                          data-atomic-instance={__atomicIdx}>
                           <Github size={15} />
                         </a>
                         <a
                           href={project.demo}
                           aria-label="Demo"
                           className="w-8 h-8 rounded-lg border border-white/10 bg-white/[0.04] flex items-center justify-center text-white/50 hover:text-white transition-all"
-                        >
+                          data-atomic-id="a1iwkdz5"
+                          data-atomic-instance={__atomicIdx}>
                           <ExternalLink size={15} />
                         </a>
                       </div>
                     </div>
-                    <p className="text-white/50 text-sm leading-relaxed text-pretty">
+                    <p
+                      className="text-white/50 text-sm leading-relaxed text-pretty"
+                      data-atomic-id="a1ie5rjc"
+                      data-atomic-instance={__atomicIdx}>
                       {project.description}
                     </p>
-                    <div className="flex flex-wrap gap-2">
-                      {project.tags.map((tag) => (
-                        <span key={tag} className={`px-2.5 py-1 rounded-lg text-xs font-medium ${ac.badge}`}>
-                          {tag}
-                        </span>
-                      ))}
+                    <div
+                      className="flex flex-wrap gap-2"
+                      data-atomic-id="a1tmyx7h"
+                      data-atomic-instance={__atomicIdx}>
+                      {project.tags.map((tag, __atomicIdx) => (<span
+                        key={tag}
+                        className={`px-2.5 py-1 rounded-lg text-xs font-medium ${ac.badge}`}
+                        data-atomic-id="a1fdj6yi"
+                        data-atomic-instance={__atomicIdx}>
+                        {tag}
+                      </span>))}
                     </div>
-                    <div className="grid grid-cols-3 gap-3 pt-1">
-                      {project.metrics.map((m) => (
-                        <div key={m.label} className="text-center">
-                          <div className={`text-base font-bold ${ac.text} font-[family-name:var(--font-space-grotesk)]`}>
-                            {m.value}
-                          </div>
-                          <div className="text-[10px] text-white/35">{m.label}</div>
+                    <div
+                      className="grid grid-cols-3 gap-3 pt-1"
+                      data-atomic-id="a1todrbz"
+                      data-atomic-instance={__atomicIdx}>
+                      {project.metrics.map((m, __atomicIdx) => (<div
+                        key={m.label}
+                        className="text-center"
+                        data-atomic-id="a152w46l"
+                        data-atomic-instance={__atomicIdx}>
+                        <div
+                          className={`text-base font-bold ${ac.text} font-[family-name:var(--font-space-grotesk)]`}
+                          data-atomic-id="a55bdcg"
+                          data-atomic-instance={__atomicIdx}>
+                          {m.value}
                         </div>
-                      ))}
+                        <div
+                          className="text-[10px] text-white/35"
+                          data-atomic-id="a56q7gy"
+                          data-atomic-instance={__atomicIdx}>{m.label}</div>
+                      </div>))}
                     </div>
                   </motion.div>
                 );
@@ -824,50 +991,77 @@ export default function HomePage() {
           </motion.div>
         </div>
       </section>
-
       {/* ── EXPERIENCE ───────────────────────────────────────────────────── */}
-      <section id="experience" className="relative py-28 md:py-36 bg-white/[0.015]">
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent" />
-          <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent" />
-          <div className="absolute top-1/3 left-0 w-[400px] h-[400px] rounded-full bg-cyan-500/5 blur-[100px]" />
+      <section
+        id="experience"
+        className="relative py-28 md:py-36 bg-white/[0.015]"
+        data-atomic-id="a48st90">
+        <div className="absolute inset-0 pointer-events-none" data-atomic-id="ah6rssl">
+          <div
+            className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent"
+            data-atomic-id="aij94tk" />
+          <div
+            className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent"
+            data-atomic-id="aiknyy2" />
+          <div
+            className="absolute top-1/3 left-0 w-[400px] h-[400px] rounded-full bg-cyan-500/5 blur-[100px]"
+            data-atomic-id="aim2t2k" />
         </div>
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-[1fr_2fr] gap-16">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8" data-atomic-id="ah86mx3">
+          <div className="grid lg:grid-cols-[1fr_2fr] gap-16" data-atomic-id="apb4p62">
             {/* Left sticky label */}
             <motion.div
               variants={fadeInLeft}
               {...motionProps}
               className="lg:sticky lg:top-24 lg:self-start space-y-4"
             >
-              <span className="text-xs font-semibold uppercase tracking-widest text-violet-400">
+              <span
+                className="text-xs font-semibold uppercase tracking-widest text-violet-400"
+                data-atomic-id="aztxvi9">
                 Experience
               </span>
-              <h2 className="text-4xl lg:text-5xl font-bold tracking-tight font-[family-name:var(--font-space-grotesk)]">
+              <h2
+                className="text-4xl lg:text-5xl font-bold tracking-tight font-[family-name:var(--font-space-grotesk)]"
+                data-atomic-id="abwl46j">
                 Where I&apos;ve worked
               </h2>
-              <p className="text-white/50 leading-relaxed text-pretty">
+              <p
+                className="text-white/50 leading-relaxed text-pretty"
+                data-atomic-id="ascc3oj">
                 Five years across frontier AI labs, data infrastructure companies, and academic
                 research groups.
               </p>
               {/* Publications teaser */}
-              <div className="mt-8 rounded-2xl border border-white/[0.06] bg-[#111118] p-5 space-y-4">
-                <h3 className="text-sm font-semibold text-white/80">Selected Publications</h3>
-                {publications.map((pub) => (
-                  <a
-                    key={pub.title}
-                    href={pub.link}
-                    className="block group space-y-1 hover:opacity-80 transition-opacity"
-                  >
-                    <div className="text-xs font-medium text-white/70 leading-snug group-hover:text-white transition-colors">
-                      {pub.title}
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <span className="text-[10px] text-violet-400 font-semibold">{pub.venue}</span>
-                      <span className="text-[10px] text-white/30">{pub.authors}</span>
-                    </div>
-                  </a>
-                ))}
+              <div
+                className="mt-8 rounded-2xl border border-white/[0.06] bg-[#111118] p-5 space-y-4"
+                data-atomic-id="a11u10m2">
+                <h3 className="text-sm font-semibold text-white/80" data-atomic-id="amdzgb9">Selected Publications</h3>
+                {publications.map((pub, __atomicIdx) => (<a
+                  key={pub.title}
+                  href={pub.link}
+                  className="block group space-y-1 hover:opacity-80 transition-opacity"
+                  data-atomic-id="anqvwso"
+                  data-atomic-instance={__atomicIdx}>
+                  <div
+                    className="text-xs font-medium text-white/70 leading-snug group-hover:text-white transition-colors"
+                    data-atomic-id="a1dqy6q5"
+                    data-atomic-instance={__atomicIdx}>
+                    {pub.title}
+                  </div>
+                  <div
+                    className="flex items-center gap-2"
+                    data-atomic-id="a1dsd0un"
+                    data-atomic-instance={__atomicIdx}>
+                    <span
+                      className="text-[10px] text-violet-400 font-semibold"
+                      data-atomic-id="a1rskctd"
+                      data-atomic-instance={__atomicIdx}>{pub.venue}</span>
+                    <span
+                      className="text-[10px] text-white/30"
+                      data-atomic-id="a1t35yxv"
+                      data-atomic-instance={__atomicIdx}>{pub.authors}</span>
+                  </div>
+                </a>))}
               </div>
             </motion.div>
 
@@ -878,7 +1072,9 @@ export default function HomePage() {
               className="relative space-y-6"
             >
               {/* Vertical line */}
-              <div className="absolute left-0 top-3 bottom-3 w-px bg-gradient-to-b from-violet-500/40 via-white/[0.06] to-transparent hidden lg:block" />
+              <div
+                className="absolute left-0 top-3 bottom-3 w-px bg-gradient-to-b from-violet-500/40 via-white/[0.06] to-transparent hidden lg:block"
+                data-atomic-id="a1f9jmxk" />
 
               {experiences.map((exp, i) => (
                 <motion.div
@@ -890,36 +1086,67 @@ export default function HomePage() {
                   <div
                     className="absolute left-[-4.5px] top-5 w-2.5 h-2.5 rounded-full border-2 border-[#0a0a0f] hidden lg:block transition-all duration-300 group-hover:scale-150"
                     style={{ backgroundColor: exp.accent }}
-                  />
+                    data-atomic-id="a1jm4hwq"
+                    data-atomic-instance={i} />
 
-                  <div className="rounded-2xl border border-white/[0.06] bg-[#111118] p-7 space-y-4 hover:border-white/[0.12] transition-all duration-300 shadow-[0_2px_16px_rgba(0,0,0,0.3)]">
-                    <div className="flex flex-wrap items-start justify-between gap-3">
-                      <div>
-                        <h3 className="text-lg font-bold text-white font-[family-name:var(--font-space-grotesk)]">
+                  <div
+                    className="rounded-2xl border border-white/[0.06] bg-[#111118] p-7 space-y-4 hover:border-white/[0.12] transition-all duration-300 shadow-[0_2px_16px_rgba(0,0,0,0.3)]"
+                    data-atomic-id="a1jnjc18"
+                    data-atomic-instance={i}>
+                    <div
+                      className="flex flex-wrap items-start justify-between gap-3"
+                      data-atomic-id="a1z0zskv"
+                      data-atomic-instance={i}>
+                      <div data-atomic-id="a1gug18y" data-atomic-instance={i}>
+                        <h3
+                          className="text-lg font-bold text-white font-[family-name:var(--font-space-grotesk)]"
+                          data-atomic-id="aasoevh"
+                          data-atomic-instance={i}>
                           {exp.role}
                         </h3>
-                        <div className="flex items-center gap-2 mt-1">
-                          <span className="text-sm font-semibold" style={{ color: exp.accent }}>
+                        <div
+                          className="flex items-center gap-2 mt-1"
+                          data-atomic-id="a16857b"
+                          data-atomic-instance={i}>
+                          <span
+                            className="text-sm font-semibold"
+                            style={{ color: exp.accent }}
+                            data-atomic-id="a1jbc6g9"
+                            data-atomic-instance={i}>
                             {exp.company}
                           </span>
-                          <span className="text-white/20">·</span>
-                          <span className="text-xs text-white/40">{exp.location}</span>
+                          <span
+                            className="text-white/20"
+                            data-atomic-id="a1klxskr"
+                            data-atomic-instance={i}>·</span>
+                          <span
+                            className="text-xs text-white/40"
+                            data-atomic-id="a1lwjep9"
+                            data-atomic-instance={i}>{exp.location}</span>
                         </div>
                       </div>
-                      <span className="text-xs text-white/35 bg-white/[0.04] border border-white/[0.06] px-3 py-1.5 rounded-full shrink-0">
+                      <span
+                        className="text-xs text-white/35 bg-white/[0.04] border border-white/[0.06] px-3 py-1.5 rounded-full shrink-0"
+                        data-atomic-id="a14gx5ab"
+                        data-atomic-instance={i}>
                         {exp.period}
                       </span>
                     </div>
-                    <p className="text-white/50 text-sm leading-relaxed text-pretty">
+                    <p
+                      className="text-white/50 text-sm leading-relaxed text-pretty"
+                      data-atomic-id="a1g45mny"
+                      data-atomic-instance={i}>
                       {exp.description}
                     </p>
-                    <ul className="space-y-2">
-                      {exp.highlights.map((h) => (
-                        <li key={h} className="flex items-start gap-2.5 text-sm text-white/60">
-                          <Check size={14} className="mt-0.5 shrink-0" style={{ color: exp.accent }} />
-                          {h}
-                        </li>
-                      ))}
+                    <ul className="space-y-2" data-atomic-id="af2i07l" data-atomic-instance={i}>
+                      {exp.highlights.map((h, __atomicIdx) => (<li
+                        key={h}
+                        className="flex items-start gap-2.5 text-sm text-white/60"
+                        data-atomic-id="a1xwo9f7"
+                        data-atomic-instance={__atomicIdx}>
+                        <Check size={14} className="mt-0.5 shrink-0" style={{ color: exp.accent }} />
+                        {h}
+                      </li>))}
                     </ul>
                   </div>
                 </motion.div>
@@ -928,14 +1155,19 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* ── TESTIMONIALS ─────────────────────────────────────────────────── */}
-      <section className="relative py-28 md:py-36">
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[300px] rounded-full bg-violet-600/5 blur-[100px]" />
+      <section className="relative py-28 md:py-36" data-atomic-id="aoj808f">
+        <div
+          className="absolute inset-0 pointer-events-none"
+          data-atomic-id="a11lzvi8">
+          <div
+            className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent"
+            data-atomic-id="amct7k3" />
+          <div
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[300px] rounded-full bg-violet-600/5 blur-[100px]"
+            data-atomic-id="ame81ol" />
         </div>
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8" data-atomic-id="a11nepmq">
           <motion.div
             variants={staggerContainer}
             {...motionProps}
@@ -964,23 +1196,39 @@ export default function HomePage() {
                 whileHover={{ y: -4, transition: { duration: 0.2 } }}
                 className={`rounded-2xl border border-white/[0.06] bg-[#111118] p-7 space-y-5 shadow-[0_2px_16px_rgba(0,0,0,0.3)] hover:border-white/[0.12] transition-all duration-300 ${i === 1 ? "md:mt-8" : ""}`}
               >
-                <div className="flex gap-1">
+                <div className="flex gap-1" data-atomic-id="a141fvug" data-atomic-instance={i}>
                   {Array.from({ length: 5 }).map((_, si) => (
                     <Star key={si} size={14} className="text-amber-400 fill-amber-400" />
                   ))}
                 </div>
-                <p className="text-white/65 text-sm leading-relaxed text-pretty italic">
+                <p
+                  className="text-white/65 text-sm leading-relaxed text-pretty italic"
+                  data-atomic-id="a1o3y9mv"
+                  data-atomic-instance={i}>
                   &ldquo;{t.quote}&rdquo;
                 </p>
-                <div className="flex items-center gap-3 pt-1">
+                <div
+                  className="flex items-center gap-3 pt-1"
+                  data-atomic-id="a1449k3g"
+                  data-atomic-instance={i}>
                   <img
                     src={t.avatar}
                     alt={t.name}
                     className="w-10 h-10 rounded-full object-cover border border-white/[0.08]"
-                  />
-                  <div>
-                    <div className="text-sm font-semibold text-white">{t.name}</div>
-                    <div className="text-xs text-white/40">{t.title}</div>
+                    data-atomic-id="a1gci8ah"
+                    data-atomic-instance={i} />
+                  <div data-atomic-id="a1gdwy4h" data-atomic-instance={i}>
+                    <div
+                      className="text-sm font-semibold text-white"
+                      data-atomic-id="adflqas"
+                      data-atomic-instance={i}>{t.name}</div>
+                    <div
+                      className="text-xs text-white/40"
+                      data-atomic-id="adh0kfa"
+                      data-atomic-instance={i}
+                      style={i === 0 ? {
+                        color: "#6366f1"
+                      } : undefined}>{t.title}</div>
                   </div>
                 </div>
               </motion.div>
@@ -988,15 +1236,25 @@ export default function HomePage() {
           </motion.div>
         </div>
       </section>
-
       {/* ── CONTACT ──────────────────────────────────────────────────────── */}
-      <section id="contact" className="relative py-28 md:py-36 bg-white/[0.015]">
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent" />
-          <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent" />
+      <section
+        id="contact"
+        className="relative py-28 md:py-36 bg-white/[0.015]"
+        data-atomic-id="abr6otv">
+        <div
+          className="absolute inset-0 pointer-events-none"
+          data-atomic-id="a1f5r078">
+          <div
+            className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent"
+            data-atomic-id="a17yupvr" />
+          <div
+            className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent"
+            data-atomic-id="a1809k09" />
         </div>
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-start">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8" data-atomic-id="a1f75ubq">
+          <div
+            className="grid lg:grid-cols-2 gap-16 items-start"
+            data-atomic-id="a1eqqa89">
             {/* Left */}
             <motion.div
               variants={staggerContainer}
@@ -1011,7 +1269,9 @@ export default function HomePage() {
                 className="text-4xl lg:text-5xl font-bold tracking-tight font-[family-name:var(--font-space-grotesk)] text-balance"
               >
                 Let&apos;s build something{" "}
-                <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
+                <span
+                  className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent"
+                  data-atomic-id="awvum13">
                   remarkable
                 </span>
               </motion.h2>
@@ -1025,55 +1285,77 @@ export default function HomePage() {
                   { icon: <Mail size={16} />, label: "Email", value: BRAND.email, href: `mailto:${BRAND.email}` },
                   { icon: <Github size={16} />, label: "GitHub", value: "github.com/aidenpark", href: "https://github.com/aidenpark" },
                   { icon: <Linkedin size={16} />, label: "LinkedIn", value: "linkedin.com/in/aidenpark", href: "https://linkedin.com/in/aidenpark" },
-                ].map((item) => (
-                  <a
-                    key={item.label}
-                    href={item.href}
-                    target={item.href.startsWith("mailto") ? undefined : "_blank"}
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-4 p-4 rounded-xl border border-white/[0.06] bg-[#111118] hover:border-violet-500/30 hover:bg-violet-500/5 transition-all duration-300 group"
-                  >
-                    <div className="w-9 h-9 rounded-lg bg-violet-500/10 border border-violet-500/20 flex items-center justify-center text-violet-400">
-                      {item.icon}
+                ].map((item, __atomicIdx) => (<a
+                  key={item.label}
+                  href={item.href}
+                  target={item.href.startsWith("mailto") ? undefined : "_blank"}
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-4 p-4 rounded-xl border border-white/[0.06] bg-[#111118] hover:border-violet-500/30 hover:bg-violet-500/5 transition-all duration-300 group"
+                  data-atomic-id="a1pg6utf"
+                  data-atomic-instance={__atomicIdx}>
+                  <div
+                    className="w-9 h-9 rounded-lg bg-violet-500/10 border border-violet-500/20 flex items-center justify-center text-violet-400"
+                    data-atomic-id="a13lna5k"
+                    data-atomic-instance={__atomicIdx}>
+                    {item.icon}
+                  </div>
+                  <div data-atomic-id="a13n24a2" data-atomic-instance={__atomicIdx}>
+                    <div
+                      className="text-xs text-white/35"
+                      data-atomic-id="a11adlbh"
+                      data-atomic-instance={__atomicIdx}>{item.label}</div>
+                    <div
+                      className="text-sm font-medium text-white/70 group-hover:text-white transition-colors"
+                      data-atomic-id="a11bsffz"
+                      data-atomic-instance={__atomicIdx}>
+                      {item.value}
                     </div>
-                    <div>
-                      <div className="text-xs text-white/35">{item.label}</div>
-                      <div className="text-sm font-medium text-white/70 group-hover:text-white transition-colors">
-                        {item.value}
-                      </div>
-                    </div>
-                    <ChevronRight size={16} className="ml-auto text-white/20 group-hover:text-violet-400 group-hover:translate-x-1 transition-all" />
-                  </a>
-                ))}
+                  </div>
+                  <ChevronRight size={16} className="ml-auto text-white/20 group-hover:text-violet-400 group-hover:translate-x-1 transition-all" />
+                </a>))}
               </motion.div>
             </motion.div>
 
             {/* Right: form */}
             <motion.div variants={fadeInRight} {...motionProps}>
-              <div className="rounded-2xl border border-white/[0.06] bg-[#111118] p-8 shadow-[0_4px_32px_rgba(0,0,0,0.4)]">
+              <div
+                className="rounded-2xl border border-white/[0.06] bg-[#111118] p-8 shadow-[0_4px_32px_rgba(0,0,0,0.4)]"
+                data-atomic-id="a6uzu2d">
                 {formSent ? (
                   <motion.div
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
                     className="text-center py-12 space-y-4"
                   >
-                    <div className="w-14 h-14 rounded-full bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center mx-auto">
+                    <div
+                      className="w-14 h-14 rounded-full bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center mx-auto"
+                      data-atomic-id="a1brxkoe">
                       <Check size={24} className="text-emerald-400" />
                     </div>
-                    <h3 className="text-xl font-bold text-white font-[family-name:var(--font-space-grotesk)]">
+                    <h3
+                      className="text-xl font-bold text-white font-[family-name:var(--font-space-grotesk)]"
+                      data-atomic-id="a1leuufc">
                       Message sent
                     </h3>
-                    <p className="text-white/50 text-sm">
+                    <p className="text-white/50 text-sm" data-atomic-id="a1qmssf">
                       Thanks for reaching out. I&apos;ll get back to you within 24 hours.
                     </p>
                   </motion.div>
                 ) : (
-                  <form onSubmit={handleFormSubmit} className="space-y-5">
-                    <h3 className="text-lg font-bold text-white font-[family-name:var(--font-space-grotesk)] mb-6">
+                  <form
+                    onSubmit={handleFormSubmit}
+                    className="space-y-5"
+                    data-atomic-id="a1kk9513">
+                    <h3
+                      className="text-lg font-bold text-white font-[family-name:var(--font-space-grotesk)] mb-6"
+                      data-atomic-id="a1avi3ep">
                       Send a message
                     </h3>
-                    <div className="space-y-1.5">
-                      <label htmlFor="name" className="text-xs font-medium text-white/40 uppercase tracking-wider">
+                    <div className="space-y-1.5" data-atomic-id="a1j9mr7v">
+                      <label
+                        htmlFor="name"
+                        className="text-xs font-medium text-white/40 uppercase tracking-wider"
+                        data-atomic-id="a1jabhqj">
                         Name
                       </label>
                       <input
@@ -1085,10 +1367,13 @@ export default function HomePage() {
                         onChange={handleFormChange}
                         placeholder="Your name"
                         className="w-full px-4 py-3 rounded-xl bg-white/[0.04] border border-white/[0.08] text-white placeholder:text-white/25 text-sm focus:outline-none focus:border-violet-500/50 focus:bg-violet-500/5 transition-all duration-200"
-                      />
+                        data-atomic-id="aqx6tct" />
                     </div>
-                    <div className="space-y-1.5">
-                      <label htmlFor="email" className="text-xs font-medium text-white/40 uppercase tracking-wider">
+                    <div className="space-y-1.5" data-atomic-id="a1jb1lcd">
+                      <label
+                        htmlFor="email"
+                        className="text-xs font-medium text-white/40 uppercase tracking-wider"
+                        data-atomic-id="a19cgafh">
                         Email
                       </label>
                       <input
@@ -1100,10 +1385,13 @@ export default function HomePage() {
                         onChange={handleFormChange}
                         placeholder="you@company.com"
                         className="w-full px-4 py-3 rounded-xl bg-white/[0.04] border border-white/[0.08] text-white placeholder:text-white/25 text-sm focus:outline-none focus:border-violet-500/50 focus:bg-violet-500/5 transition-all duration-200"
-                      />
+                        data-atomic-id="agzbm1r" />
                     </div>
-                    <div className="space-y-1.5">
-                      <label htmlFor="message" className="text-xs font-medium text-white/40 uppercase tracking-wider">
+                    <div className="space-y-1.5" data-atomic-id="a1jcgfgv">
+                      <label
+                        htmlFor="message"
+                        className="text-xs font-medium text-white/40 uppercase tracking-wider"
+                        data-atomic-id="azel34f">
                         Message
                       </label>
                       <textarea
@@ -1115,7 +1403,7 @@ export default function HomePage() {
                         onChange={handleFormChange}
                         placeholder="Tell me about your project or opportunity..."
                         className="w-full px-4 py-3 rounded-xl bg-white/[0.04] border border-white/[0.08] text-white placeholder:text-white/25 text-sm focus:outline-none focus:border-violet-500/50 focus:bg-violet-500/5 transition-all duration-200 resize-none"
-                      />
+                        data-atomic-id="a10yydfz" />
                     </div>
                     <motion.button
                       type="submit"
