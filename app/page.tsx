@@ -1207,7 +1207,10 @@ export default function HomePage() {
                 <p
                   className="text-white/65 text-sm leading-relaxed text-pretty italic"
                   data-atomic-id="a1o3y9mv"
-                  data-atomic-instance={i}>
+                  data-atomic-instance={i}
+                  style={i === 1 ? {
+                    fontSize: "32px"
+                  } : undefined}>
                   &ldquo;{t.quote}&rdquo;
                 </p>
                 <div
