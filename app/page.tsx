@@ -1,4 +1,5 @@
 "use client";
+
 import { useRef, useState } from "react";
 import Link from "next/link";
 import { motion, useReducedMotion, type Variants } from "framer-motion";
@@ -345,7 +346,7 @@ export default function HomePage() {
                     Engineer
                   </span>
                   <br />
-                  <span className="text-white/80 text-4xl lg:text-5xl xl:text-6xl">
+                  <span className="text-white/80 text-4xl lg:text-5xl xl:text-6xl" style={{ color: "#ef4444" }}>
                     &amp; Researcher
                   </span>
                 </h1>
