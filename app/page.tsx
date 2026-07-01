@@ -354,7 +354,10 @@ export default function HomePage() {
               <motion.div variants={fadeInUp} className="space-y-3">
                 <h1
                   className="text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-[1.05] font-[family-name:var(--font-space-grotesk)]"
-                  data-atomic-id="a1mchto">
+                  data-atomic-id="a1mchto"
+                  style={{
+                    color: "#f97316"
+                  }}>
                   <span className="text-white" data-atomic-id="a1o9rtq0">AI/ML</span>
                   <br data-atomic-id="aoubnvg" />
                   <span
