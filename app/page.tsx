@@ -1,6 +1,5 @@
 "use client";
-
-import { useState, useRef } from "react";
+import { useRef, useState } from "react";
 import Link from "next/link";
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 import { ArrowRight, Code2 as Github, Briefcase as Linkedin, MessageCircle as Twitter, Mail, ExternalLink, Star, Sparkles, Activity, Terminal, FileCode, GitBranch, Check, Download, ChevronRight, Circle } from 'lucide-react';
@@ -218,7 +217,7 @@ const testimonials = [
   {
     quote:
       "Aiden's work on our reward modeling infrastructure was transformative. He brought both deep research intuition and production-grade engineering discipline to every problem.",
-    name: "Dr. Sarah Chen",
+    name: "Asad",
     title: "Research Lead, Anthropic",
     avatar: "https://i.ytimg.com/vi/_V6s5WWmM90/maxresdefault.jpg",
   },
