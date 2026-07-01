@@ -560,7 +560,7 @@ export default function HomePage() {
                   className="absolute -inset-3 rounded-3xl bg-gradient-to-br from-violet-600/20 to-cyan-500/10 blur-xl"
                   data-atomic-id="awishwi" />
                 <img
-                  src="https://media.licdn.com/dms/image/v2/D5603AQGuIaBBElYOaQ/profile-displayphoto-scale_200_200/B56ZplhXxZG0AY-/0/1762639841192?e=2147483647&v=beta&t=Qf4pjdYs-IyHr__zN0HRtLqb0_vycPOnpqV2kXBfnTY"
+                  src="https://titoaistorageaccount.blob.core.windows.net/titoai-storage/245bb228-88ca-4069-a22d-91ed994bbfbb/images/uploaded-1782904604914-mq4p5.png?v=1782904605749"
                   alt="Aiden Park, AI/ML Engineer"
                   className="relative w-full h-full object-cover rounded-2xl border border-white/[0.08] shadow-[0_8px_48px_rgba(0,0,0,0.5)]"
                   data-atomic-id="awk7gbi" />
