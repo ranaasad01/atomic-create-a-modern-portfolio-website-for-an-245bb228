@@ -976,7 +976,10 @@ export default function HomePage() {
                         <div
                           className={`text-base font-bold ${ac.text} font-[family-name:var(--font-space-grotesk)]`}
                           data-atomic-id="a55bdcg"
-                          data-atomic-instance={__atomicIdx}>
+                          data-atomic-instance={__atomicIdx}
+                          style={__atomicIdx === 1 ? {
+                            color: "#a855f7"
+                          } : undefined}>
                           {m.value}
                         </div>
                         <div
